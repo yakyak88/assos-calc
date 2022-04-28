@@ -1,6 +1,7 @@
 const inp = document.querySelector(".inp");
 const btn = document.querySelector(".btn");
 
+<<<<<<< HEAD
 const request = async function () {
     const currencies = await fetch(
         "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json"
@@ -44,3 +45,13 @@ getPrice();
 //     const val = e.target.value;
 //     console.log(val);
 // });
+=======
+btn.addEventListener('click',function(){
+    const price = inp.value*4.32*0.80 
+    document.querySelector(".newPrice").textContent= `${price} Shekels` 
+    document.body.style.backgroundColor= 'yellow' 
+    inp.value= " "
+    inp.placeholder  = `תודה אוסי המיסניקית `
+
+})
+>>>>>>> e805a5d21a8846be1172257fc7870ccd2b4ecc51
